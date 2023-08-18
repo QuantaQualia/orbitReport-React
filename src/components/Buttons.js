@@ -1,6 +1,6 @@
 import satData from "./components/satData.js";
 
-const Buttons = () => {
+const Buttons = ({filterByType, setSat, displaySats} ) => {
   return (
     <div>
       {displaySats.map((sat, id) => {
@@ -10,7 +10,7 @@ const Buttons = () => {
     </button>
   );
 })}
-      <button onClick={() => setStat(satData)}>
+      <button onClick={() => setSat(satData)}>
       All Orbits
       </button>
       </div>
